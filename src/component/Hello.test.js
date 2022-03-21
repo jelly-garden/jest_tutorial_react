@@ -3,7 +3,7 @@ import Hello from './Hello';
 
 
 const user = {
-    name: 'Tom',
+    name: 'Mike',
     age: 30
 };
 
@@ -16,6 +16,6 @@ test('snapshot: name 있음', () => {
     expect(el).toMatchSnapshot();
 });
 test('snapshot: name 없음', () => {
-    const el = render(<Hello user={user2} />);
+    const el = render(<Hello />);
     expect(el).toMatchSnapshot();
 });
